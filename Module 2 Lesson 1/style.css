@@ -1,0 +1,25 @@
+/* global css */
+*{
+    background-color: darkgoldenrod;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* External CSS */
+h3{
+    color: blue;
+}
+/* element selector */
+h4{
+    color: brown;
+}
+/* class selector */
+.myclass{
+    color: blueviolet;
+}
+/* id selector */
+#myid{
+    color: cornflowerblue;
+}
+/* group selector */
+h5,p{
+    color: darkgreen;
+}
