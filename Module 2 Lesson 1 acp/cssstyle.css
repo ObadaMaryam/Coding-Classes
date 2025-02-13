@@ -1,0 +1,25 @@
+/* global css */
+* {
+    background-color: green;
+}
+/* External CSS */
+h3 {
+    color: brown;
+}
+/* element selector */
+h4 {
+    color: darkmagenta;
+}
+/* class selector */
+.myclass {
+    color: fuchsia;
+}
+/* id selector */
+#myid {
+    color: blue;
+}
+/* group selector */
+h5,
+p {
+    color: aqua;
+}
