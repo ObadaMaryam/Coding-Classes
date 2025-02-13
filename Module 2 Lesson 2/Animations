@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Animation */
+            @keyframes example {
+                30% {background-color : red;}
+                40% {background-color : blue;}
+                50% {background-color : yellow;}
+                60% {background-color : green;}
+                70% {background-color:orangered;}
+                80% {background-color: crimson;}
+            }
+            /*The elements to apply the Animation to*/
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
+                animation-name: example;
+                animation-duration: 30s;
+            }
+        </style>
+    </head>
+    <body>
+        <div>Obada Maryam</div>
+    </body>
+</html>
