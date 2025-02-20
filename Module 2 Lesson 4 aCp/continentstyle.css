@@ -9,6 +9,30 @@ h1 {
     color: crimson;
 }
 
+/* Attribute Selector */
+a {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: crimson;
+}
+
+/* Child Selector */
+ul>li {
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+/* Sibling Selector */
+h1+p {
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
 /* :hover Pseudo-class */
 ul li:hover {
     color: black;
