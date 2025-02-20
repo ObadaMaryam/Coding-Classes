@@ -1,0 +1,72 @@
+body {
+    font-family: fantasy;
+    background-color: black;
+    color: darkmagenta;
+    text-decoration: underline overline;
+}
+
+h1 {
+    color: crimson;
+}
+
+/* :hover Pseudo-class */
+ul li:hover {
+    color: black;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(2) {
+    background-color: aqua;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(4) {
+    background-color: darkkhaki;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(6) {
+    background-color: aqua;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(1) {
+    background-color: green;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(3) {
+    background-color: darkorange;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(5) {
+    background-color: darkorange;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(7) {
+    background-color: green;
+}
+
+/* :not(selector) Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+    color: green;
+}
+
+/* ::before Pseudo-element */
+ul li::before {
+    content: "#";
+}
+
+/* ::after Pseudo-element */
+a::after {
+    content: "*"
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size: 50px;
+    color: darkred;
+}
