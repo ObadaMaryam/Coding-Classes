@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions in Js</title>
+    </head>
+    <body>
+        <button onclick="subtraction(50)">Js Functions</button>
+        <p id="results"></p>
+        <button onclick="multiplication()">Scope of Variables</button>
+        <p id="demo"></p>
+        <script>
+            function subtraction(a,b){
+                var b = 70;
+                document.getElementById("results").innerHTML = b-a;
+            }
+
+            var x = 7;
+            function multiplication(){
+                var y = 7;
+                document.getElementById("demo").innerHTML = x*y;
+            }
+            
+            var result = function division (m,n){return m/n}
+            document.write(result(50,5))
+        </script>
+    </body>
+</html>
