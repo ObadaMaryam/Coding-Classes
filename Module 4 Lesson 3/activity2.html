@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops in Js</title>
+    </head>
+    <body>
+        <h1>Loops in Javascript</h1>
+        <p id="results"></p>
+        <script>
+            var drinks = ["CocaCola" , "Sprite" , "GormyCola" , "Cock" , "RedBull" , "Mango Juice" , "Maza" , "Mint Margrita" , "Apple Juice" , "Almond Milk" , "Herbal Tea" ]
+            var text = "";
+            var d;
+            for(d=0; d<drinks.length; d++) {
+                text += drinks[d] + "<br>"
+            }
+            document.getElementById("results").innerHTML = text;
+        </script>
+    </body>
+</html>
