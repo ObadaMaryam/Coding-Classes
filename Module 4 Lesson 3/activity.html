@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js Methods</title>
+    </head>
+    <body>
+        <h1>Js String Methods</h1>
+        <p>Basics Methods</p>
+        <script>
+            var str = "MarYaM";
+            document.write(str.toLowerCase());
+            document.write("<br>");
+            document.write(str.toUpperCase());
+            document.write("<br>");
+            document.write(str.startsWith("i"));
+            document.write("<br>");
+            document.write(str.startsWith("M"));
+            document.write("<br>");
+
+            //.test Method -> returns true or false
+            var str1 = "Today I learned about Methods , Loops & Switch";
+            var patt = new RegExp("about");
+            var res = patt.test(str);
+            document.write(res);
+
+            document.write("<br>");
+            
+            //.test Method -> returns true or false
+            var str1 = "Today I learned about Methods , Loops & Switch";
+            var patt = new RegExp("about");
+            var res = patt.test(str1);
+            document.write(res);
+        </script>
+    </body>
+</html>
