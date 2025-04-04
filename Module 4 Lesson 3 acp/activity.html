@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loops , Methods & Switchs</title>
+</head>
+
+<body>
+    <h1>Switchs</h1>
+    <p id="results"></p>
+    
+    <h2>Loops in Js</h2>
+    <p id="demo"></p>
+
+    <h3>Js Methods:</h3>
+    <p>Numbers from 1 to 10</p>
+    <p id="result"></p>
+
+    <script>
+        var number = "";
+        for (i = 1; i < 11; i++)
+        number += i + "<br>";
+    document.write ("The random value is" +Math.floor(Math.random() * 100));
+    document.write("<br>");
+    document.write("<br>");
+    var date = new Date();
+    document.write("Today date is" + date.getDate());
+
+        var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"]
+        var text = "";
+        var n;
+        for (n = 0; n < numbers.length; n++) {
+            text += numbers[n] + "<br>"
+        }
+        document.getElementById("demo").innerHTML = text;
+
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;  
+        }
+        document.getElementById("results").innerHTML = "Today is " + day;
+    </script>
+</body>
+
+</html>
