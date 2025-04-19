@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Js Objects & Array</title>
+</head>
+
+<body>
+    <p id=",m,"></p>
+    <p id="*n*"></p>
+    <p id=".o."></p>
+
+    <p id="results"></p>
+
+    <p id="demo"></p>
+    <p id="pet"></p>
+    <p id="pets"></p>
+    <p id="om"></p>
+    <p id="am"></p>
+    <script>
+        var food = ["Achar Gosht", "Chicken Khari", "Qurma", "Nehari", "BBQ", "Shami kabab", "Mali Boti", "Achari Bhindi", "Arvi-Bangan", " Haleem", "Rice", "Bariyani", "Veg-Rice"];
+            document.getElementById(",m,").innerHTML = food.join(",")
+            document.getElementById
+                ("*n*").innerHTML = food.join(".")
+            food.pop()
+            document.getElementById(".o.").innerHTML = food;
+
+
+        // Create an object:
+        var aboutmymom = {
+            firstName: "Sajida.",
+            secondName: "Rasheed",
+            age: "45",
+            city: "Bahawalpur",
+            country: "Pakistan",
+            fav_color: "Golden",
+        };
+        document.getElementById("results").innerHTML = aboutmymom.firstName + aboutmymom.secondName + " is " + aboutmymom.age + " years old. ";
+
+        var pets = [
+                "Cow", "Goat", "Bull", "Sheep", "Hen", "Horse", "Cat", "Dog"
+            ];
+            document.getElementById("demo").innerHTML = pets[0];
+            document.getElementById("pet").innerHTML = pets[2];
+            document.getElementById("pets").innerHTML = pets[5];
+            document.getElementById("om").innerHTML = pets[7];
+            document.getElementById("am").innerHTML = pets[6];
+    </script>
+</body>
+
+</html>
