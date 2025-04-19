@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Argument Objects in Js / Js Maths Object Methods</title>
+</head>
+
+<body>
+    <h2>Argument Objects in Js:-</h2>
+    <p>Find the largest number with help of Argument Objects</p>
+    <p id="results"></p>
+
+    <h2>Js Math Object Methods:-</h2>
+    <script type="text/javascript">
+        var value = Math.abs(20);
+            document.write("Demo Test Value : " + value + "<br>");
+            var value = Math.cos(-1);
+            document.write("Demo 1 Test Value : " + value + "<br>");
+            var value = Math.sin(1);
+            document.write("Demo 2 Test Value : " + value + "<br>");
+            var value = Math.tan(45);
+            document.write("Demo 3 Test Value : " + value + "<br>");
+
+
+        function findMax() {
+            var a;
+            var max = 0;
+            for (a = 0; a < arguments.length; a++) {
+                if (arguments[a] > max) {
+                    max = arguments[a];
+                }
+            }
+            return max;
+        }
+        document.getElementById("results").innerHTML = findMax(14, 15, 16, 17, 18, 19, 20, 21, 22, 23);
+    </script>
+</body>
+
+</html>
