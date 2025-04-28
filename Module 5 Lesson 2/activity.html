@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Classes in Javascript</title>
+    </head>
+    <body>
+        <p>How to use Js Class</p>
+        <p id="mom"></p>
+        <p id="dad"></p>
+        <script>
+            //creating a class
+            class parents {
+                constructor(name , year) {
+                    this.name = name;
+                    this.year = year;
+                }
+                //creating age method
+                age() {
+                    let date = new Date();
+                    return date.getFullYear() - this.year;
+                }
+            }
+            // use parents class with two objects
+            mom = new parents("Sajida",1980);
+            document.getElementById("mom").innerHTML = "My mom name is " + mom.name + ". My mom born in " + mom.year + ".& My mom is " + mom.age();
+            dad = new parents("Athar", 1971);
+                document.getElementById("dad").innerHTML = "My dad name is " + dad.name + ". My dad born in " + dad.year + ".& My dad is " + dad.age();
+        </script>
+    </body>
+</html>
