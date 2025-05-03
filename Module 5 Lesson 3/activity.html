@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sort</title>
+    </head>
+    <body>
+        <center><h1>Array Sort in Js</h1></center>
+        <p>Click this button to sort the Array</p>
+        <center><button onclick="Ascending()">*-*Ascending Order*-*</button>
+        <button onclick="Descending()">*-*Descending Order*-*</button></center>
+        <p id="Ascending"></p>
+        <br>
+        <p id="Descending"></p>
+        <script>
+            let sort = [20, 40, 2, 7, 50, 70, 99, 74, 12, 14, 17, 19];
+            document.getElementById("Ascending").innerHTML = sort;
+            sort.sort(function(a, b) {return a- b });
+            document.getElementById("Ascending").innerHTML = sort;
+            sort.sort(function (a, b) { return b - a });
+                document.getElementById("Descending").innerHTML = sort;
+        </script>
+    </body>
+</html>
