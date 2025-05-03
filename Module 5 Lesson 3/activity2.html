@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maping Array</title>
+    </head>
+    <body>
+        <p>Multiply every number in the array with 7:-</p>
+        <p id="demo"></p>
+        <script>
+            let numbers = [7, 10, 31, 3, 19];
+            function thisfunction(num) {
+                return num * 7;
+            }
+            let newarray = numbers.map(thisfunction);
+            document.getElementById("demo").innerHTML = newarray;
+        </script>
+    </body>
+</html>
