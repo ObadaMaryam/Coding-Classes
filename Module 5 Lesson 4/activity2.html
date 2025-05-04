@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error Handling in js</title>
+    </head>
+    <body>
+        <h2>Js Error Handling:-</h2>
+        <p>How to catch an error.
+            Lets do!
+        </p>
+        <p id="finding-error"></p>
+        <script>
+            try {
+                addsomething("Hello! Maryam");
+            }
+            catch(error) {
+                document.getElementById("finding-error").innerHTML = error.message;
+            }
+        </script>
+    </body>
+</html>
