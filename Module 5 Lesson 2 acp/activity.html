@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Class Inheritance & Static Mathods in Js</title>
+</head>
+
+<body>
+    <h1>^-^Class Inheritance in Js^-^ :-</h1>
+    <p id="demo"></p>
+
+    <h1>*-*Static Methods in Js*-* :-</h1>
+    <p id="Hello!"></p>
+    <p id="Hi!"></p>
+    <p id="Welcome"></p>
+
+    <script>
+        class Car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+            presrnt() {
+                return "I have a " + this.carname;
+            }
+        }
+        class Model extends Car {
+            constructor(brand, model) {
+                super(brand);
+                this.carmodel = model;
+            }
+            show() {
+                return this.presrnt() + " and it is a " + this.carmodel;
+            }
+        }
+        let mycar = new Model("Prado(Land-Cruiser)", "LC250.");
+        document.getElementById("demo").innerHTML = mycar.show();
+
+        class Student {
+                constructor(name) {
+                    this.studentname = name;
+                }
+                hello() {
+                    return "Hello!" + this.studentname;
+                }
+                static hi(m) {
+                    return "Hi!" + m.studentname;
+                }
+                static welcome() {
+                    return "Welcome!";
+                }
+            }
+            myname = new Student("Maryam.");
+            document.getElementById("Welcome").innerHTML = Student.welcome();
+            document.getElementById("Hi!").innerHTML = myname.hello();
+            document.getElementById("Hello!").innerHTML = Student.hi(myname);
+    </script>
+</body>
+
+</html>
