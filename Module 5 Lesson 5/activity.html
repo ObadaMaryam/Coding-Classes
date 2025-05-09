@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>^Js to JSON & JSON to Js^</title>
+    </head>
+    <body>
+        <center><h1>*JsON*</h1></center>
+        <center><h2><p style="color: crimson;">^Convert Js to JSON & JSON to Js^ :-</p></h2></center>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            let aboutme = {
+                name: "Obada_Maryam",
+                city: "Bahawalpur",
+                country: "Pakistan",
+                fav_color: "White",
+            }
+            //converting it into JSON//
+            let myJSON = JSON.stringify(aboutme);
+            document.getElementById("demo1").innerHTML = myJSON;
+
+            //converting it into Js//
+            let myJs = JSON.parse(myJSON);
+            document.getElementById("demo2").innerHTML = "My name is " + myJs.name + "." + " I am from " + myJs.city + "," + myJs.country + "."
+        </script>
+    </body>
+</html>
