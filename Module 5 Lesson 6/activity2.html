@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validation using API</title>
+    <style>
+        body {
+            background-color: darkcyan;
+            font-family: monospace;
+            color: crimson;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Enter a number and click OK:</h1>
+        <input id="id1" type="number" min="50" max="385" required>
+        <button onclick="myfunction()">OK</button>
+        <b>
+            <p style="color: chartreuse;">Make sure the input is between 50 and 385</p>
+        </b>
+        <p id="om"></p>
+        <script>
+            function myfunction() {
+                let input = document.getElementById("id1");
+                if(!input.checkValidity()) {
+                    document.getElementById("om").innerHTML = input.validationMessage;
+                } else {
+                    document.getElementById("om").innerHTML = "Input is OK!";
+                }
+            }
+        </script>
+    </body>
+</html>
