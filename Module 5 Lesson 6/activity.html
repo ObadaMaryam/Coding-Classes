@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <style>
+            body{
+                background-color: fuchsia;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="myform" onsubmit="validateform()">
+            Name: <input type="text" name="myname">
+            <input type="submit" value="submit">
+            <p id="demo"></p>
+        </form>
+        <script>
+            function validateform() {
+                let m = document.forms["myform"]["myname"].value
+                if (m == "") {
+                    alert("Name must be filled out.")
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
