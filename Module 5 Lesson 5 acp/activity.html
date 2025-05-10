@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Async / await in Js</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <center style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <h1 style="color: crimson;">Js async  / Js await</h1>
+    </center>
+    <p id="results" style="color: aqua;"></p>
+    <script>
+        async function multiply(m, n) {
+            let response = await m * n ;
+            disply(response);
+        }
+        function disply(some) {
+            document.getElementById("results").innerHTML = some;
+        }
+        multiply(12 , 108);
+    </script>
+</body>
+
+</html>
