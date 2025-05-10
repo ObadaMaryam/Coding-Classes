@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error Handling in js</title>
+    <style>
+        body{
+            background-image: url(flower.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <center style="font-family: cursive;"><h2>Js Error Handling:-</h2></center>
+    <p>How to catch an error.
+        Lets do!
+    </p>
+    <p id="finding-error"></p>
+    <script>
+        try {
+            addsomethingelse,("Hi! Maryam");
+        }
+        catch (error) {
+            document.getElementById("finding-error").innerHTML = error.message;
+        }
+    </script>
+</body>
+
+</html>
