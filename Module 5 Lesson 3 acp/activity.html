@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maping Array & Sorting </title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <center style="color: darkgreen;">
+        <h1 style="background-color: burlywood;"><p style="font-family: 'Courier New', Courier, monospace;">*Maping Array and turn into sort:~ *</p></h1>
+    </center>
+    <p style="background-color: darkcyan;">Multiply every number in the array with 11:-</p>
+    <p id="results" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></p>
+
+    <br> <br> <br>
+    <center style="background-color: chartreuse;"><h2 style="font-family: 'Times New Roman', Times, serif;"><p style="color: crimson;">^Click this button to sort the Array:- ^</p></h2></center>
+    <button onclick="Asc()" style="background-color: lime;">*Ascending Order*</button>
+    <button onclick="Des()" style="background-color: lightcoral;">*Descending Order*</button>
+    <p id="Asc" style="color: darkmagenta;"></p>
+    <br>
+    <p id="Des" style="color: yellow;"></p>
+    <script>
+        let numbers = [7, 10, 31, 3, 19, 5, 9, 17, 37, 105, 77];
+        function thisfunction(num) {
+            return num * 11;
+        }
+        let newarray = numbers.map(thisfunction);
+        document.getElementById("results").innerHTML = newarray;
+
+        let sort = [77, 110, 341, 33, 209, 55, 99, 187, 407, 1155, 847];
+        document.getElementById("Asc").innerHTML = sort;
+            sort.sort(function (a, b) { return a - b }); document.getElementById("Asc").innerHTML = sort;
+            sort.sort(function (a, b) { return b - a });
+            document.getElementById("Des").innerHTML = sort; 
+    </script>
+</body>
+
+</html>
