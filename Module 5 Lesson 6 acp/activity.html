@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validations</title>
+        <style>
+            body{
+                background-color: lightgreen;
+                text-decoration: underline; 
+            }
+            form{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-decoration: overline;
+                color: navy;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <h1 style="color: crimson;">^Form Validation  & Validation using API<sub style="color: darkgreen;">(*Application Programming Interface*)</sub>^</h1>
+        <form name="myform" onsubmit="ValidateForm();">
+            Name: <input type="text" name="myname">
+            <br> <br>
+            Email: <input type="text" email="myemail">
+            <br> <br>
+            Age: <input id="age" name="myage" type="number" min="18" max="30">
+            <input type="submit" value="login">
+            <p id="om"></p>
+        </form>
+        <script>
+            function ValidateForm() {
+                let p = document.forms["myform"]["myname"].value;
+                let q = document.forms["myform"]["myemail"]
+                let r = document.forms["myform"]["myage"].value;
+                if (p == "" || q == "" || r == "") {
+                    alert("Name/Email/Age can`t be empty");
+                    return false;
+                } else 
+                alert("Succesfullylogged-in")
+            }
+        </script>
+        </fieldset>
+    </body>
+</html>
