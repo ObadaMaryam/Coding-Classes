@@ -45,3 +45,8 @@ body {
         background-image: url("gro.jpg");
         background-size: cover;
     }
+
+    .about-image {
+        width: 80%;
+        height: 500px;
+    }
