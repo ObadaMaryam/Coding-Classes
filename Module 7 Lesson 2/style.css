@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#container{
+    height: 500px;
+    width: 1000px;
+    background-image: url("bg.jpg");
+    margin: 100px 150px;
+}
+#Calculator{
+    height: 450px;
+    width: 320px;
+    background-color: burlywood;
+    margin: 0 auto;
+    top: 30px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0)
+}
+#keyboard{
+    height: 350px;
+}
+.operator, .number, .empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50px;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: antiquewhite;
+}
+.number:active , .operator:active{
+    font-size: 13px;
+}
+.number , .operator {
+    cursor: pointer;
+}
