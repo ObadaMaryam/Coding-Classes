@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SecureTrust Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">SecureTrust</div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#account">Account Summary</a></li>
+                <li><a href="#contact" tabindex="0">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" role="banner">
+            <h1>Banking You Can Trust</h1>
+            <p>Your secure partner for personal and business banking solutions.</p>
+            <div class="hero-buttons">
+                <button class="btn" onclick="alert('Login functionality coming soon!')">Login</button>
+                <button class="btn" onclick="alert('Sign up functionality coming soon!')">Sign Up</button>
+            </div>
+        </section>
+
+        <section id="services" aria-label="Bank services overview" class="services">
+            <article tabindex="0" class="service-card" aria-describedby="desc-checking">
+                <div class="service-icon" aria-hidden="true">🏦</div>
+                <h2 class="service-title">Checking Accounts</h2>
+                <p id="desc-checking" class="service-desc">Convenient daily banking with easy access and zero fees.</p>
+            </article>
+            <article tabindex="0" class="service-card" aria-describedby="desc-savings">
+                <div class="service-icon" aria-hidden="true">💰</div>
+                <h2 class="service-title">Savings Accounts</h2>
+                <p id="desc-savings" class="service-desc">Grow your money with competitive interest and flexible
+                    options.</p>
+            </article>
+            <article tabindex="0" class="service-card" aria-describedby="desc-loans">
+                <div class="service-icon" aria-hidden="true">📈</div>
+                <h2 class="service-title">Loans & Mortgages</h2>
+                <p id="desc-loans" class="service-desc">Affordable rates and tailored loans to meet your financial
+                    goals.</p>
+            </article>
+            <article tabindex="0" class="service-card" aria-describedby="desc-cards">
+                <div class="service-icon" aria-hidden="true">💳</div>
+                <h2 class="service-title">Credit & Debit Cards</h2>
+                <p id="desc-cards" class="service-desc">Secure, widely accepted cards with great rewards and protection.
+                </p>
+            </article>
+        </section>
+
+        <section id="account" class="account-summary" role="region" aria-label="Sample account summary">
+            <h2 class="account-header">Your Account Summary</h2>
+            <div class="account-details">
+                <div class="account-col">
+                    <h3>Checking Balance</h3>
+                    <p>$4,158.72</p>
+                </div>
+                <div class="account-col">
+                    <h3>Savings Balance</h3>
+                    <p>$12,345.00</p>
+                </div>
+                <div class="account-col">
+                    <h3>Credit Card Due</h3>
+                    <p>$120.50</p>
+                </div>
+                <div class="account-col">
+                    <h3>Loans Remaining</h3>
+                    <p>$15,000.00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!--Social Media Accounts-->
+        <div class="container">
+            <h4>Social Media</h4>
+            <h3>Lets be a friends</h3>
+            <div class="row d-flex justify-content-center mb-3">
+                <div class="col-3 media_link btn" href="#">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <h4 class="text-white">LinkedIn</h4>
+                        </div>
+                        <div class="col-6">
+                            <img style="height: 30px; width: 30px;" src="LinkedIn_logo.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 media_link btn" href="#">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <h4 class="text-white">Facebook</h4>
+                        </div>
+                        <div class="col-6">
+                            <img style="height: 30px; width: 30px;" src="Facebook_logo.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 media_link btn" href="#">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <h4 class="text-white">Instagram</h4>
+                        </div>
+                        <div class="col-6">
+                            <img style="height: 30px; width: 30px;" src="Instagram_icon.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 media_link btn" href="#">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <h4 class="text-white">Email</h4>
+                        </div>
+                        <div class="col-6">
+                            <img style="height: 30px; width: 30px;" src="mail-logo.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <section id="contact" role="contentinfo" style="text-align:center;margin-top: 4rem;">
+                <p>Need help? Call us at <a href="tel:+18005551234" style="color:#1976d2; font-weight:600;">+92-3214567</a> or
+                    email <a href="mailto:support@securetrustbank.com"
+                        style="color:#1976d2; font-weight:600;">support@securetrustbank.com</a></p>
+                </section>
+
+    <footer>
+        <div class="container d-flex justify-content-center">
+            <p class="text-white-50">Copyright© 2025 | <b class="text-white"> All Rights Reserved by SecureTrust</b></p>
+            </div>
+    </footer>
+</body>
+
+</html>
