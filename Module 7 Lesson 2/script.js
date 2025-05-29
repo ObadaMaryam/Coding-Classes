@@ -1,81 +1,141 @@
-//Set the text in the output display
-function setoutput(value) {
+// Set the text in the output display
+
+function setOutput(value) {
+
     document.getElementById("output_value").innerText = value;
+
 }
 
-//Get the text from the output display
-function getoutput() {
+// Get the text from the output display
+
+function getOutput() {
+
     return document.getElementById("output_value").innerText;
+
 }
 
-//Set the text in the history display
-function sethistory(value) {
+// Set the text in the history display
+
+function setHistory(value) {
+
     document.getElementById("history_value").innerText = value;
+
 }
 
-//Get the text from the history display
-function gethistory() {
+// Get the text from the history display
+
+function getHistory() {
+
     return document.getElementById("history_value").innerText;
+
 }
 
-//when number buttons (0-9) clicked 
-let numberButtons = document.getElementsByClassName("number")
+// When number buttons (0-9) are clicked
+
+let numberButtons = document.getElementsByClassName("number");
+
 for (let button of numberButtons) {
+
     button.addEventListener("click", function () {
-        let output = getoutput(); // I am displaying number that I have clicked
-        setoutput(output + this.id); //Whatever number I am clicking , I set the number to the output div
-    })
+
+        let output = getOutput(); // I am displaying the number that I have clicked
+
+        setOutput(output + this.id); // Add the number to the output
+
+    });
+
 }
 
-//when operator buttons are clicked
-let operatorButtons = document.getElementsByClassName("operator")
+// When operator buttons are clicked
+
+let operatorButtons = document.getElementsByClassName("operator");
+
 for (let button of operatorButtons) {
-    button.addEventListener("cick", function () {
+
+    button.addEventListener("click", function () {
+
         let id = this.id;
 
-        if (id == "clear") {
-            //clear everything
-            setoutput("");
-            sethistory("")
-        }
-        else if (id == "backspace") {
-            let output = getoutput();
+        if (id === "clear") {
+
+            // Clear everything
+
+            setOutput("");
+
+            setHistory("");
+
+        } else if (id === "backspace") {
+
+            let output = getOutput();
+
             if (output) {
-                setoutput(output.slice(0, -1))
+
+                setOutput(output.slice(0, -1));
+
             }
-        }
-        else if (id == "=") {
-            //Calculate the result
-            let history = gethistory;
-            let output = getoutput;
+
+        } else if (id === "=") {
+
+            // Calculate the result
+
+            let history = getHistory();
+
+            let output = getOutput();
+
             let expression = history + output;
 
             try {
+
                 let result = eval(expression);
-                setoutput(result);
-                sethistory("");
+
+                setOutput(result);
+
+                setHistory("");
+
             } catch (error) {
-                setoutput("Error")
+
+                setOutput("Error");
+
             }
-        }
-        else {
-            let output = getoutput();
+
+        } else {
+
+            // For +, -, x, ÷, %
+
+            let output = getOutput();
+
             if (output !== "") {
-                let history = gethistory;
-                let operator = convertoperator(id);
-                sethistory(history + output + operator);
-                setoutput("");
+
+                let history = getHistory();
+
+                let operator = convertOperator(id);
+
+                setHistory(history + output + operator);
+
+                setOutput("");
+
             }
+
         }
-    })
+
+    });
+
 }
 
-//Convert button id to actual math operator
-function convertoperator(id) {
-    if (id == "/") return "/"
-    if (id == "x") return "*"
-    if (id == "-") return "-"
-    if (id == "+") return "+"
-    if (id == "%") return "%"
+// Convert button ID to actual math operator
+
+function convertOperator(id) {
+
+    if (id === "/") return "/";
+
+    if (id === "x") return "*";
+
+    if (id === "-") return "-";
+
+    if (id === "+") return "+";
+
+    if (id === "%") return "%";
+
     return "";
-}
+
+    }
