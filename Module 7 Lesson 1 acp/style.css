@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, #0066cc 0%, #0099ff 100%);
+    background: linear-gradient(90deg, darkblue 0%, darkblue 100%);
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
@@ -103,7 +103,7 @@ main {
 }
 
 h3.section-title {
-    font-weight: 700;
+    font-weight: 1000;
     font-size: 2rem;
     color: #0066cc;
     margin-bottom: 1rem;
@@ -194,3 +194,36 @@ h3.section-title {
     color: #555;
     font-size: 0.9rem;
 }
+
+.media_link {
+
+    padding: 1rem;
+    max-width: 12rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    border: 2px solid black;
+    border-radius: 50px 0.3rem;
+    background-color: white;
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.1);
+}
+
+#tc {
+    margin-top: 4rem;
+    background: #e6f0ff;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+#footer {
+    background: linear-gradient(90deg, darkblue 0%, darkblue 100%);
+    text-align: center;
+    padding: 1rem 1rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
