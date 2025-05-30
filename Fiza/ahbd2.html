@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Advance Birthday Wishes to Fiza</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap');
+
+        /* Reset & base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            overflow-x: hidden;
+            color: #4b2e05;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            max-width: 700px;
+            width: 100%;
+            padding: 40px 30px;
+            border-radius: 24px;
+            box-shadow: 0 8px 25px rgba(252, 182, 159, 0.4);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4.8rem;
+            color: #d94e1f;
+            margin-bottom: 10px;
+            text-shadow: 0 3px 8px rgba(217, 78, 31, 0.4);
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 2rem;
+            color: #b85707;
+            margin-bottom: 30px;
+            letter-spacing: 0.05em;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: #6f4b27;
+            margin-bottom: 40px;
+        }
+
+        /* Button */
+        .celebrate-btn {
+            background: #ff938c;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.3rem;
+            padding: 16px 36px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px #ff8a83aa;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .celebrate-btn:hover {
+            background: #ff6f67;
+            box-shadow: 0 7px 18px #ff6f6733;
+        }
+
+        /* Sparkle effect for button */
+        .sparkle {
+            position: absolute;
+            background: radial-gradient(white, transparent);
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            pointer-events: none;
+            opacity: 0;
+            animation: sparkleAnim 1.2s ease forwards;
+        }
+
+        @keyframes sparkleAnim {
+            0% {
+                transform: scale(0.1) translate(0, 0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.4) translate(40px, -40px);
+                opacity: 0;
+            }
+        }
+
+        /* Balloon style and animation */
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            width: 70px;
+            height: 90px;
+            border-radius: 50% / 60%;
+            opacity: 0.85;
+            filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.12));
+            animation-name: floatUp;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        .balloon::after {
+            content: '';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            width: 2px;
+            height: 25px;
+            background: rgba(0, 0, 0, 0.1);
+            transform: translateX(-50%);
+            border-radius: 1px;
+        }
+
+        .balloon:nth-child(1) {
+            left: 10%;
+            background: linear-gradient(135deg, #f25f5c 40%, #e77760);
+            animation-duration: 7.5s;
+            animation-delay: 0s;
+        }
+
+        .balloon:nth-child(2) {
+            left: 25%;
+            background: linear-gradient(135deg, #fff176 40%, #f9a825);
+            animation-duration: 8s;
+            animation-delay: 2s;
+        }
+
+        .balloon:nth-child(3) {
+            left: 45%;
+            background: linear-gradient(135deg, #81d4fa 40%, #0288d1);
+            animation-duration: 7s;
+            animation-delay: 1s;
+        }
+
+        .balloon:nth-child(4) {
+            left: 65%;
+            background: linear-gradient(135deg, #ce93d8 40%, #ab47bc);
+            animation-duration: 7.8s;
+            animation-delay: 3s;
+        }
+
+        .balloon:nth-child(5) {
+            left: 85%;
+            background: linear-gradient(135deg, #ff8a65 40%, #d84315);
+            animation-duration: 8.2s;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes floatUp {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                opacity: 0.85;
+            }
+
+            50% {
+                transform: translateY(-130vh);
+                opacity: 1;
+            }
+        }
+
+        /* Confetti */
+        .confetti-piece {
+            position: fixed;
+            width: 12px;
+            height: 8px;
+            background-color: #e65100;
+            opacity: 0;
+            transform-origin: center;
+            animation-timing-function: ease-in-out;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" role="main" aria-label="Advance birthday wishes to Fiza">
+        <h1>Happy Advance Birthday, Fiza!</h1>
+        <h2>Wishing You Joy & Endless Happiness</h2>
+        <p>
+            May your special day be filled with love, laughter, and magical moments.<br />
+            Here’s to a spectacular year ahead full of wonderful surprises and dreams come true!
+        </p>
+        <button class="celebrate-btn" aria-label="Celebrate birthday with sparkles">Celebrate 🎉</button>
+    </div>
+
+    <!-- Balloons -->
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+
+    <script>
+        // Confetti Colors
+        const confettiColors = ['#ff8a65', '#ffd54f', '#ce93d8', '#81d4fa', '#ffab91'];
+
+        // Create Confetti Piece
+        function createConfettiPiece() {
+            const piece = document.createElement('div');
+            piece.className = 'confetti-piece';
+            const sizeW = Math.floor(Math.random() * 10) + 6;
+            const sizeH = Math.floor(Math.random() * 6) + 4;
+            piece.style.width = sizeW + 'px';
+            piece.style.height = sizeH + 'px';
+            piece.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+            piece.style.left = Math.random() * window.innerWidth + 'px';
+            piece.style.top = '-20px';
+            piece.style.opacity = 1;
+
+            const rotateStart = Math.random() * 360;
+            const rotateEnd = rotateStart + (Math.random() * 1080 - 540);
+            const fallDuration = Math.random() * 3000 + 3000;
+
+            const animation = piece.animate([
+                { transform: translateY(0) rotate(${ rotateStart }deg), opacity: 1 },
+                { transform: translateY(100vh) rotate(${ rotateEnd }deg), opacity: 0 }
+            ], {
+                duration: fallDuration,
+                easing: 'ease-in-out',
+                iterations: 1,
+                fill: 'forwards'
+            });
+
+            animation.onfinish = () => {
+                piece.remove();
+            };
+
+            document.body.appendChild(piece);
+        }
+
+        // Trigger confetti rain
+        function launchConfetti() {
+            for (let i = 0; i < 40; i++) {
+                setTimeout(createConfettiPiece, i * 100);
+            }
+        }
+
+        // Initial confetti launch and interval
+        launchConfetti();
+        setInterval(launchConfetti, 7000);
+
+        // Sparkle animation on button click
+        const btn = document.querySelector('.celebrate-btn');
+        btn.addEventListener('click', e => {
+            const sparkle = document.createElement('span');
+            sparkle.className = 'sparkle';
+            const rect = btn.getBoundingClientRect();
+            const posX = e.clientX - rect.left;
+            const posY = e.clientY - rect.top;
+            sparkle.style.left = posX + 'px';
+            sparkle.style.top = posY + 'px';
+            btn.appendChild(sparkle);
+
+            sparkle.addEventListener('animationend', () => {
+                sparkle.remove();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
